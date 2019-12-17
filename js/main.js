@@ -56,3 +56,31 @@ function setReplace(frase, nome, repl) {
   return frase.replace(nome, repl);
 }
 console.log(setReplace("vai Japão", "Japão", "brazil"));
+
+function testeOnclic() {
+  document.getElementById("agradecimento").innerHTML = "<b>abrigado<b>";
+  console.log(document.getElementById("agradecimento"));
+}
+
+function redirecionar() {
+  window.open("http://www.google.com.br"); //em outra janela
+  window.location.href("http://www.google.com.br"); //mesma aba
+}
+
+function trocar(elemento) {
+  //document.getElementById("trocar").innerHTML = "<b>mouver hover<b>";
+  elemento.innerHTML = "<b>mouver hover<b>";
+}
+function voltar(elemento) {
+  //document.getElementById("trocar").innerHTML = "<b>passe o mouse<b>";
+
+  elemento.innerHTML = "<b>passe o mouse<b>";
+}
+
+function load() {
+  alert("pagina carregada");
+}
+
+function funcaoChange(elemento) {
+  console.log(elemento.value);
+}

@@ -7,7 +7,18 @@
     <title>Curso Java scripts</title>
   </head>
 
-  <body>
+  <body onload="load()">
     <h2>MInha pagina inicial</h2>
+    <button type="button" onclick="testeOnclic(this)">Click aki</button>
+    <p id="agradecimento" onclick="redirecionar()"></p>
+    <p id="trocar" onmouseover="trocar(this)" onmouseout="voltar(this)">
+      passar o mouver
+    </p>
+
+    <select onchange="funcaoChange(this)">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+    </select>
   </body>
 </html>
